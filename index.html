@@ -85,8 +85,10 @@
 
     <script>
       var showButtonAt = 1569;
+      var showCommentsAt = 1980;
       var videoId = "c0bpcdtoo0";
       var firstButtonIdToDisable = "cta1";
+      var secondButtonIdToDisable = "cta2";
       var videoTrigger = false;
       var duration = 0;
       window._wq = window._wq || [];
@@ -103,6 +105,12 @@
                       document.getElementById(firstButtonIdToDisable).style.display = "inline";
                       document.getElementById(firstButtonIdToDisable).style.visibility = "visible";
                     }
+                if (video.time() >= showCommentsAt) {
+                      document.getElementById("fb-comment1").classList.remove("d-none")
+                      document.getElementById("cta2").classList.remove("d-none")
+                      document.getElementById(secondButtonIdToDisable).style.display = "inline";
+                      document.getElementById(secondButtonIdToDisable).style.visibility = "visible";
+                  }
               });
           }
       });
