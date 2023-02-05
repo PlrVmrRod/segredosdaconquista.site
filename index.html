@@ -10,6 +10,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preload" href="https://scripts.converteai.net/1af7dcab-26ba-480c-967e-295dec3245c6/players/63dfea387b79bf0009f659d6/player.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+<link rel="preload" href="https://images.converteai.net/1af7dcab-26ba-480c-967e-295dec3245c6/players/63dfea387b79bf0009f659d6/thumbnail.jpg" as="image">
+<link rel="preload" href="https://cdn.converteai.net/1af7dcab-26ba-480c-967e-295dec3245c6/63dfea2e43b989000bc62708/playlist.m3u8" as="fetch">
+<link rel="dns-prefetch" href="https://cdn.converteai.net">
+<link rel="dns-prefetch" href="https://scripts.converteai.net">
+<link rel="dns-prefetch" href="https://images.converteai.net">
+<link rel="dns-prefetch" href="https://api.vturb.com.br">
         <!-- Meta Pixel Code -->
 <script>
   !function(f,b,e,v,n,t,s)
@@ -71,17 +79,9 @@
             </h4>
 
             <!-- VSL -->
-              <script src="https://fast.wistia.com/embed/medias/wo12qcuar9.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_wo12qcuar9 videoFoam=true resumable=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/wo12qcuar9/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+              <div id="vid_63dfea387b79bf0009f659d6" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_63dfea387b79bf0009f659d6" src="https://images.converteai.net/1af7dcab-26ba-480c-967e-295dec3245c6/players/63dfea387b79bf0009f659d6/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_63dfea387b79bf0009f659d6" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_63dfea387b79bf0009f659d6">var s=document.createElement("script");s.src="https://scripts.converteai.net/1af7dcab-26ba-480c-967e-295dec3245c6/players/63dfea387b79bf0009f659d6/player.js",s.async=!0,document.head.appendChild(s);</script>
               <img src="./assets/img/logos/volume.png" alt="" style="width: 27px">
               <b style="font-size: 14px; margin-top: 80px; letter-spacing: -1px;">🔊 POR FAVOR, VERIFIQUE SE O SOM ESTÁ LIGADO!</b>
-           
-            
-            <!-- Botão -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://pay.kiwify.com.br/y9hF7fB" class="a-btn" style="text-decoration: none;">
-                <span class="span-btn">COMPRAR AGORA!</span>
-              </a>
-            </div>
 
             <!-- Termos de Uso e Política de Privacidade -->
             <div class="terms-text" style="margin-top: 80%;">
@@ -100,30 +100,5 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="./assets/js/com.js"></script>
 
-    <script>
-      var showButtonAt = 740
-      var videoId = "wo12qcuar9";
-      var firstButtonIdToDisable = "cta1";
-      var videoTrigger = false;
-      var duration = 0;
-      window._wq = window._wq || [];
-      document.getElementById(firstButtonIdToDisable).style.visibility = "hidden";
-      _wq.push({
-          id: videoId, onReady: function (video) {
-              duration = video.duration();
-              video.bind("secondchange", function () {
-                console.log('pepeu')
-                console.log(video)
-                  console.log(video.time());
-                  if (video.time() >= showButtonAt && videoTrigger !== true) {
-                      videoTrigger = true;
-                      document.getElementById("cta1").classList.remove("d-none")
-                      document.getElementById(firstButtonIdToDisable).style.display = "inline";
-                      document.getElementById(firstButtonIdToDisable).style.visibility = "visible";
-                    }
-              });
-          }
-      });
-  </script>
   </body>
 </html>
